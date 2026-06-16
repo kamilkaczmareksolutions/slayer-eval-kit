@@ -1,0 +1,6 @@
+# Slepota tla (nie indeksuj w tle, ale mozna wywolac recznie przez @)
+# Duze artefakty wynikowe i fixtures - kod pozostaje indeksowany.
+**/results/*.json
+**/reports/*.md
+decon/fixtures/*.jsonl
+mcq/data/*.jsonl

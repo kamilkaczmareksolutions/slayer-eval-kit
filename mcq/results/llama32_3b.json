@@ -1,0 +1,1101 @@
+{
+  "model": "ollama/llama3.2:3b",
+  "n_shots": 5,
+  "seed": 0,
+  "shuffle_options": true,
+  "n_items": 32,
+  "modes": [
+    "generative",
+    "likelihood"
+  ],
+  "per_item": [
+    {
+      "id": "wo_01",
+      "category": "wiedza_ogolna",
+      "answer_idx": 2,
+      "question": "Który pierwiastek chemiczny ma symbol 'O'?",
+      "options": [
+        "Wodór",
+        "Złoto",
+        "Tlen",
+        "Węgiel"
+      ],
+      "answer_text": "Tlen",
+      "generative": {
+        "pred_idx": 2,
+        "correct": true,
+        "pred_text": "Tlen",
+        "parsed": true,
+        "raw": "C"
+      },
+      "likelihood": {
+        "pred_idx": 2,
+        "correct": true,
+        "pred_text": "Tlen",
+        "parsed": true,
+        "raw": "argmax=C lp=-0.000",
+        "dist": {
+          "C": -0.00041666364995762706,
+          "D": -8.046610832214355,
+          "A": -9.598130226135254,
+          "B": -10.590500831604004
+        },
+        "margin": 8.046194168564398
+      }
+    },
+    {
+      "id": "wo_02",
+      "category": "wiedza_ogolna",
+      "answer_idx": 1,
+      "question": "Ile wynosi suma kątów wewnętrznych trójkąta?",
+      "options": [
+        "90 stopni",
+        "180 stopni",
+        "360 stopni",
+        "270 stopni"
+      ],
+      "answer_text": "180 stopni",
+      "generative": {
+        "pred_idx": 0,
+        "correct": false,
+        "pred_text": "90 stopni",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": false,
+        "pred_text": "90 stopni",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.229",
+        "dist": {
+          "A": -0.22925053536891937,
+          "B": -2.089062213897705,
+          "C": -2.820112705230713,
+          "D": -3.841942310333252
+        },
+        "margin": 1.8598116785287857
+      }
+    },
+    {
+      "id": "wo_03",
+      "category": "wiedza_ogolna",
+      "answer_idx": 2,
+      "question": "Które zwierzę jest największym ssakiem na Ziemi?",
+      "options": [
+        "Słoń afrykański",
+        "Żyrafa",
+        "Płetwal błękitny",
+        "Rekin wielorybi"
+      ],
+      "answer_text": "Płetwal błękitny",
+      "generative": {
+        "pred_idx": 0,
+        "correct": false,
+        "pred_text": "Słoń afrykański",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": false,
+        "pred_text": "Słoń afrykański",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.006",
+        "dist": {
+          "A": -0.006462609861046076,
+          "C": -5.544727802276611,
+          "B": -6.287558078765869,
+          "D": -7.307548999786377
+        },
+        "margin": 5.538265192415565
+      }
+    },
+    {
+      "id": "wo_04",
+      "category": "wiedza_ogolna",
+      "answer_idx": 0,
+      "question": "Który organ pompuje krew w ludzkim ciele?",
+      "options": [
+        "Serce",
+        "Wątroba",
+        "Nerki",
+        "Płuca"
+      ],
+      "answer_text": "Serce",
+      "generative": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "Serce",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "Serce",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.004",
+        "dist": {
+          "A": -0.0037014957051724195,
+          "C": -5.837918758392334,
+          "D": -7.295491695404053,
+          "B": -9.329792976379395
+        },
+        "margin": 5.834217262687162
+      }
+    },
+    {
+      "id": "wo_05",
+      "category": "wiedza_ogolna",
+      "answer_idx": 3,
+      "question": "Jaka jest jednostka natężenia prądu elektrycznego?",
+      "options": [
+        "Om",
+        "Wolt",
+        "Wat",
+        "Amper"
+      ],
+      "answer_text": "Amper",
+      "generative": {
+        "pred_idx": 3,
+        "correct": true,
+        "pred_text": "Amper",
+        "parsed": true,
+        "raw": "D"
+      },
+      "likelihood": {
+        "pred_idx": 3,
+        "correct": true,
+        "pred_text": "Amper",
+        "parsed": true,
+        "raw": "argmax=D lp=-0.028",
+        "dist": {
+          "D": -0.027548933401703835,
+          "A": -4.257563591003418,
+          "C": -4.489483833312988,
+          "B": -6.336764335632324
+        },
+        "margin": 4.230014657601714
+      }
+    },
+    {
+      "id": "wo_06",
+      "category": "wiedza_ogolna",
+      "answer_idx": 1,
+      "question": "Który gaz jest najobficiej występującym składnikiem powietrza?",
+      "options": [
+        "Argon",
+        "Azot",
+        "Dwutlenek węgla",
+        "Tlen"
+      ],
+      "answer_text": "Azot",
+      "generative": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "Azot",
+        "parsed": true,
+        "raw": "B"
+      },
+      "likelihood": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "Azot",
+        "parsed": true,
+        "raw": "argmax=B lp=-0.001",
+        "dist": {
+          "B": -0.0008527098689228296,
+          "D": -7.390359878540039,
+          "C": -8.493043899536133,
+          "A": -10.41937255859375
+        },
+        "margin": 7.389507168671116
+      }
+    },
+    {
+      "id": "wo_07",
+      "category": "wiedza_ogolna",
+      "answer_idx": 3,
+      "question": "Ile planet liczy Układ Słoneczny według definicji z 2006 roku?",
+      "options": [
+        "Dziewięć",
+        "Siedem",
+        "Dziesięć",
+        "Osiem"
+      ],
+      "answer_text": "Osiem",
+      "generative": {
+        "pred_idx": 2,
+        "correct": false,
+        "pred_text": "Dziesięć",
+        "parsed": true,
+        "raw": "C"
+      },
+      "likelihood": {
+        "pred_idx": 2,
+        "correct": false,
+        "pred_text": "Dziesięć",
+        "parsed": true,
+        "raw": "argmax=C lp=-0.488",
+        "dist": {
+          "C": -0.48813462257385254,
+          "D": -1.8288042545318604,
+          "A": -1.8386003971099854,
+          "B": -2.7104380130767822
+        },
+        "margin": 1.3406696319580078
+      }
+    },
+    {
+      "id": "wo_08",
+      "category": "wiedza_ogolna",
+      "answer_idx": 3,
+      "question": "Z czego rośliny wytwarzają glukozę i tlen w fotosyntezie?",
+      "options": [
+        "Z tłuszczów",
+        "Z azotu i gleby",
+        "Z białek",
+        "Z dwutlenku węgla i wody"
+      ],
+      "answer_text": "Z dwutlenku węgla i wody",
+      "generative": {
+        "pred_idx": 3,
+        "correct": true,
+        "pred_text": "Z dwutlenku węgla i wody",
+        "parsed": true,
+        "raw": "D"
+      },
+      "likelihood": {
+        "pred_idx": 3,
+        "correct": true,
+        "pred_text": "Z dwutlenku węgla i wody",
+        "parsed": true,
+        "raw": "argmax=D lp=-0.003",
+        "dist": {
+          "D": -0.0034413475077599287,
+          "C": -5.807772159576416,
+          "A": -7.984974384307861,
+          "B": -9.461642265319824
+        },
+        "margin": 5.804330812068656
+      }
+    },
+    {
+      "id": "jp_01",
+      "category": "jezyk_polski",
+      "answer_idx": 0,
+      "question": "Która forma bezokolicznika jest poprawna?",
+      "options": [
+        "wziąć",
+        "wziąść",
+        "wziłść",
+        "wziónć"
+      ],
+      "answer_text": "wziąć",
+      "generative": {
+        "pred_idx": 1,
+        "correct": false,
+        "pred_text": "wziąść",
+        "parsed": true,
+        "raw": "B"
+      },
+      "likelihood": {
+        "pred_idx": 1,
+        "correct": false,
+        "pred_text": "wziąść",
+        "parsed": true,
+        "raw": "argmax=B lp=-0.013",
+        "dist": {
+          "B": -0.013337893411517143,
+          "A": -4.580526351928711,
+          "D": -6.150297164916992,
+          "C": -7.054779052734375
+        },
+        "margin": 4.567188458517194
+      }
+    },
+    {
+      "id": "jp_02",
+      "category": "jezyk_polski",
+      "answer_idx": 2,
+      "question": "Jak brzmi dopełniacz liczby mnogiej słowa 'dziecko'?",
+      "options": [
+        "dziecek",
+        "dziecków",
+        "dzieci",
+        "dziatków"
+      ],
+      "answer_text": "dzieci",
+      "generative": {
+        "pred_idx": 2,
+        "correct": true,
+        "pred_text": "dzieci",
+        "parsed": true,
+        "raw": "C"
+      },
+      "likelihood": {
+        "pred_idx": 2,
+        "correct": true,
+        "pred_text": "dzieci",
+        "parsed": true,
+        "raw": "argmax=C lp=-0.449",
+        "dist": {
+          "C": -0.44881850481033325,
+          "B": -1.0187876224517822,
+          "D": -7.6383137702941895,
+          "A": -9.210514068603516
+        },
+        "margin": 0.569969117641449
+      }
+    },
+    {
+      "id": "jp_03",
+      "category": "jezyk_polski",
+      "answer_idx": 3,
+      "question": "Który zapis jest poprawny ortograficznie?",
+      "options": [
+        "napewno",
+        "napewn",
+        "na-pewno",
+        "na pewno"
+      ],
+      "answer_text": "na pewno",
+      "generative": {
+        "pred_idx": 3,
+        "correct": true,
+        "pred_text": "na pewno",
+        "parsed": true,
+        "raw": "D"
+      },
+      "likelihood": {
+        "pred_idx": 3,
+        "correct": true,
+        "pred_text": "na pewno",
+        "parsed": true,
+        "raw": "argmax=D lp=-0.003",
+        "dist": {
+          "D": -0.0026029818691313267,
+          "C": -6.692330837249756,
+          "A": -7.11081075668335,
+          "B": -7.533397197723389
+        },
+        "margin": 6.6897278553806245
+      }
+    },
+    {
+      "id": "jp_04",
+      "category": "jezyk_polski",
+      "answer_idx": 0,
+      "question": "Co oznacza frazeologizm 'rzucać grochem o ścianę'?",
+      "options": [
+        "mówić bezskutecznie, na próżno",
+        "gotować obiad",
+        "ciężko pracować fizycznie",
+        "kłócić się głośno"
+      ],
+      "answer_text": "mówić bezskutecznie, na próżno",
+      "generative": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "mówić bezskutecznie, na próżno",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "mówić bezskutecznie, na próżno",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.008",
+        "dist": {
+          "A": -0.007556425407528877,
+          "D": -5.275786876678467,
+          "C": -6.168429851531982,
+          "B": -8.064214706420898
+        },
+        "margin": 5.268230451270938
+      }
+    },
+    {
+      "id": "jp_05",
+      "category": "jezyk_polski",
+      "answer_idx": 0,
+      "question": "Która część mowy odmienia się przez przypadki, liczby i rodzaje?",
+      "options": [
+        "przymiotnik",
+        "spójnik",
+        "przysłówek",
+        "czasownik"
+      ],
+      "answer_text": "przymiotnik",
+      "generative": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "przymiotnik",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "przymiotnik",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.395",
+        "dist": {
+          "A": -0.39495986700057983,
+          "D": -1.2512717247009277,
+          "C": -3.3257994651794434,
+          "B": -5.480393886566162
+        },
+        "margin": 0.8563118577003479
+      }
+    },
+    {
+      "id": "jp_06",
+      "category": "jezyk_polski",
+      "answer_idx": 1,
+      "question": "Na jakie pytania odpowiada dopełniacz?",
+      "options": [
+        "kogo? co?",
+        "kogo? czego?",
+        "komu? czemu?",
+        "kto? co?"
+      ],
+      "answer_text": "kogo? czego?",
+      "generative": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "kogo? czego?",
+        "parsed": true,
+        "raw": "B"
+      },
+      "likelihood": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "kogo? czego?",
+        "parsed": true,
+        "raw": "argmax=B lp=-1.030",
+        "dist": {
+          "B": -1.0297826528549194,
+          "C": -1.4094918966293335,
+          "A": -1.5858300924301147,
+          "D": -1.641465425491333
+        },
+        "margin": 0.37970924377441406
+      }
+    },
+    {
+      "id": "jp_07",
+      "category": "jezyk_polski",
+      "answer_idx": 1,
+      "question": "Który wyraz jest synonimem słowa 'radość'?",
+      "options": [
+        "strach",
+        "wesołość",
+        "złość",
+        "smutek"
+      ],
+      "answer_text": "wesołość",
+      "generative": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "wesołość",
+        "parsed": true,
+        "raw": "B"
+      },
+      "likelihood": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "wesołość",
+        "parsed": true,
+        "raw": "argmax=B lp=-0.000",
+        "dist": {
+          "B": -0.0003892344539053738,
+          "D": -7.934869766235352,
+          "C": -11.187417984008789,
+          "A": -11.245702743530273
+        },
+        "margin": 7.934480531781446
+      }
+    },
+    {
+      "id": "jp_08",
+      "category": "jezyk_polski",
+      "answer_idx": 1,
+      "question": "Poprawna forma trybu rozkazującego od 'wziąć' (2 os. l.poj.) to:",
+      "options": [
+        "wezm",
+        "weź",
+        "weźmij",
+        "wziąć"
+      ],
+      "answer_text": "weź",
+      "generative": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "weź",
+        "parsed": true,
+        "raw": "B"
+      },
+      "likelihood": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "weź",
+        "parsed": true,
+        "raw": "argmax=B lp=-0.742",
+        "dist": {
+          "B": -0.7419817447662354,
+          "D": -0.7843572497367859,
+          "A": -3.2274420261383057,
+          "C": -3.585045099258423
+        },
+        "margin": 0.04237550497055054
+      }
+    },
+    {
+      "id": "ma_01",
+      "category": "matematyka",
+      "answer_idx": 0,
+      "question": "Ile wynosi 7 × 8?",
+      "options": [
+        "56",
+        "48",
+        "64",
+        "54"
+      ],
+      "answer_text": "56",
+      "generative": {
+        "pred_idx": 2,
+        "correct": false,
+        "pred_text": "64",
+        "parsed": true,
+        "raw": "C"
+      },
+      "likelihood": {
+        "pred_idx": 2,
+        "correct": false,
+        "pred_text": "64",
+        "parsed": true,
+        "raw": "argmax=C lp=-0.352",
+        "dist": {
+          "C": -0.35239821672439575,
+          "A": -1.4470561742782593,
+          "B": -3.2487242221832275,
+          "D": -3.7771646976470947
+        },
+        "margin": 1.0946579575538635
+      }
+    },
+    {
+      "id": "ma_02",
+      "category": "matematyka",
+      "answer_idx": 3,
+      "question": "Jaka jest wartość liczby pi w przybliżeniu do dwóch miejsc po przecinku?",
+      "options": [
+        "3,16",
+        "3,41",
+        "3,12",
+        "3,14"
+      ],
+      "answer_text": "3,14",
+      "generative": {
+        "pred_idx": 3,
+        "correct": true,
+        "pred_text": "3,14",
+        "parsed": true,
+        "raw": "D"
+      },
+      "likelihood": {
+        "pred_idx": 3,
+        "correct": true,
+        "pred_text": "3,14",
+        "parsed": true,
+        "raw": "argmax=D lp=-0.023",
+        "dist": {
+          "D": -0.022764770314097404,
+          "A": -3.975180149078369,
+          "B": -6.15794038772583,
+          "C": -6.436281681060791
+        },
+        "margin": 3.9524153787642717
+      }
+    },
+    {
+      "id": "ma_03",
+      "category": "matematyka",
+      "answer_idx": 1,
+      "question": "Ile wynosi 15% liczby 200?",
+      "options": [
+        "25",
+        "30",
+        "35",
+        "20"
+      ],
+      "answer_text": "30",
+      "generative": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "30",
+        "parsed": true,
+        "raw": "B) 30"
+      },
+      "likelihood": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "30",
+        "parsed": true,
+        "raw": "argmax=B lp=-0.960",
+        "dist": {
+          "B": -0.9598033428192139,
+          "C": -1.1534221172332764,
+          "D": -1.639269471168518,
+          "A": -2.232445478439331
+        },
+        "margin": 0.1936187744140625
+      }
+    },
+    {
+      "id": "ma_04",
+      "category": "matematyka",
+      "answer_idx": 1,
+      "question": "Ile wynosi pierwiastek kwadratowy z 144?",
+      "options": [
+        "13",
+        "12",
+        "11",
+        "14"
+      ],
+      "answer_text": "12",
+      "generative": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "12",
+        "parsed": true,
+        "raw": "B"
+      },
+      "likelihood": {
+        "pred_idx": 1,
+        "correct": true,
+        "pred_text": "12",
+        "parsed": true,
+        "raw": "argmax=B lp=-0.083",
+        "dist": {
+          "B": -0.08349523693323135,
+          "C": -2.66977596282959,
+          "D": -5.129605293273926,
+          "A": -5.316254615783691
+        },
+        "margin": 2.5862807258963585
+      }
+    },
+    {
+      "id": "ma_05",
+      "category": "matematyka",
+      "answer_idx": 0,
+      "question": "Jaki jest wynik działania 144 ÷ 12?",
+      "options": [
+        "12",
+        "10",
+        "16",
+        "14"
+      ],
+      "answer_text": "12",
+      "generative": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "12",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "12",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.843",
+        "dist": {
+          "A": -0.8426128625869751,
+          "B": -1.25347101688385,
+          "D": -1.9064900875091553,
+          "C": -2.000464916229248
+        },
+        "margin": 0.410858154296875
+      }
+    },
+    {
+      "id": "ma_06",
+      "category": "matematyka",
+      "answer_idx": 0,
+      "question": "Ile wynosi 2 do potęgi 5?",
+      "options": [
+        "32",
+        "16",
+        "25",
+        "64"
+      ],
+      "answer_text": "32",
+      "generative": {
+        "pred_idx": 3,
+        "correct": false,
+        "pred_text": "64",
+        "parsed": true,
+        "raw": "D"
+      },
+      "likelihood": {
+        "pred_idx": 3,
+        "correct": false,
+        "pred_text": "64",
+        "parsed": true,
+        "raw": "argmax=D lp=-0.185",
+        "dist": {
+          "D": -0.18538743257522583,
+          "A": -2.390972852706909,
+          "C": -3.023258924484253,
+          "B": -3.5408334732055664
+        },
+        "margin": 2.2055854201316833
+      }
+    },
+    {
+      "id": "ma_07",
+      "category": "matematyka",
+      "answer_idx": 2,
+      "question": "Ile wynosi suma 125 + 375?",
+      "options": [
+        "550",
+        "400",
+        "500",
+        "450"
+      ],
+      "answer_text": "500",
+      "generative": {
+        "pred_idx": 0,
+        "correct": false,
+        "pred_text": "550",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": false,
+        "pred_text": "550",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.629",
+        "dist": {
+          "A": -0.6289480924606323,
+          "C": -0.9095190763473511,
+          "D": -3.1043031215667725,
+          "B": -3.9504811763763428
+        },
+        "margin": 0.28057098388671875
+      }
+    },
+    {
+      "id": "ma_08",
+      "category": "matematyka",
+      "answer_idx": 2,
+      "question": "Ile minut ma 2,5 godziny?",
+      "options": [
+        "160",
+        "120",
+        "150",
+        "145"
+      ],
+      "answer_text": "150",
+      "generative": {
+        "pred_idx": 1,
+        "correct": false,
+        "pred_text": "120",
+        "parsed": true,
+        "raw": "B"
+      },
+      "likelihood": {
+        "pred_idx": 1,
+        "correct": false,
+        "pred_text": "120",
+        "parsed": true,
+        "raw": "argmax=B lp=-0.911",
+        "dist": {
+          "B": -0.9110715389251709,
+          "A": -1.188535451889038,
+          "C": -1.5065343379974365,
+          "D": -2.637397527694702
+        },
+        "margin": 0.2774639129638672
+      }
+    },
+    {
+      "id": "ge_01",
+      "category": "geografia",
+      "answer_idx": 0,
+      "question": "Która rzeka jest najdłuższa w Polsce?",
+      "options": [
+        "Wisła",
+        "Bug",
+        "Odra",
+        "Warta"
+      ],
+      "answer_text": "Wisła",
+      "generative": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "Wisła",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "Wisła",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.123",
+        "dist": {
+          "A": -0.12347643822431564,
+          "C": -2.5465264320373535,
+          "B": -3.3356881141662598,
+          "D": -6.126169681549072
+        },
+        "margin": 2.423049993813038
+      }
+    },
+    {
+      "id": "ge_02",
+      "category": "geografia",
+      "answer_idx": 3,
+      "question": "Jak nazywa się stolica Australii?",
+      "options": [
+        "Melbourne",
+        "Perth",
+        "Sydney",
+        "Canberra"
+      ],
+      "answer_text": "Canberra",
+      "generative": {
+        "pred_idx": 3,
+        "correct": true,
+        "pred_text": "Canberra",
+        "parsed": true,
+        "raw": "D"
+      },
+      "likelihood": {
+        "pred_idx": 3,
+        "correct": true,
+        "pred_text": "Canberra",
+        "parsed": true,
+        "raw": "argmax=D lp=-0.001",
+        "dist": {
+          "D": -0.0005887095467187464,
+          "C": -7.458583354949951,
+          "A": -11.945775032043457,
+          "B": -12.476731300354004
+        },
+        "margin": 7.457994645403232
+      }
+    },
+    {
+      "id": "ge_03",
+      "category": "geografia",
+      "answer_idx": 0,
+      "question": "Które morze oblewa Polskę od północy?",
+      "options": [
+        "Morze Bałtyckie",
+        "Morze Północne",
+        "Morze Czarne",
+        "Morze Śródziemne"
+      ],
+      "answer_text": "Morze Bałtyckie",
+      "generative": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "Morze Bałtyckie",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "Morze Bałtyckie",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.000",
+        "dist": {
+          "A": -0.00030426838202401996,
+          "C": -8.249848365783691,
+          "B": -10.115315437316895,
+          "D": -13.003911018371582
+        },
+        "margin": 8.249544097401667
+      }
+    },
+    {
+      "id": "ge_04",
+      "category": "geografia",
+      "answer_idx": 3,
+      "question": "Najwyższy szczyt Polski to:",
+      "options": [
+        "Kasprowy Wierch",
+        "Babia Góra",
+        "Śnieżka",
+        "Rysy"
+      ],
+      "answer_text": "Rysy",
+      "generative": {
+        "pred_idx": 1,
+        "correct": false,
+        "pred_text": "Babia Góra",
+        "parsed": true,
+        "raw": "B"
+      },
+      "likelihood": {
+        "pred_idx": 1,
+        "correct": false,
+        "pred_text": "Babia Góra",
+        "parsed": true,
+        "raw": "argmax=B lp=-0.273",
+        "dist": {
+          "B": -0.2731049656867981,
+          "D": -1.9351341724395752,
+          "A": -2.8713505268096924,
+          "C": -3.2716705799102783
+        },
+        "margin": 1.662029206752777
+      }
+    },
+    {
+      "id": "ge_05",
+      "category": "geografia",
+      "answer_idx": 1,
+      "question": "Który kontynent jest najmniejszy pod względem powierzchni?",
+      "options": [
+        "Ameryka Południowa",
+        "Australia",
+        "Antarktyda",
+        "Europa"
+      ],
+      "answer_text": "Australia",
+      "generative": {
+        "pred_idx": 3,
+        "correct": false,
+        "pred_text": "Europa",
+        "parsed": true,
+        "raw": "D"
+      },
+      "likelihood": {
+        "pred_idx": 3,
+        "correct": false,
+        "pred_text": "Europa",
+        "parsed": true,
+        "raw": "argmax=D lp=-0.132",
+        "dist": {
+          "D": -0.13192853331565857,
+          "C": -2.780097007751465,
+          "B": -2.8547372817993164,
+          "A": -5.531796455383301
+        },
+        "margin": 2.6481684744358063
+      }
+    },
+    {
+      "id": "ge_06",
+      "category": "geografia",
+      "answer_idx": 0,
+      "question": "Stolicą Japonii jest:",
+      "options": [
+        "Tokio",
+        "Pekin",
+        "Bangkok",
+        "Seul"
+      ],
+      "answer_text": "Tokio",
+      "generative": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "Tokio",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "Tokio",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.000",
+        "dist": {
+          "A": -5.459934618556872e-05,
+          "D": -10.031722068786621,
+          "C": -11.83640193939209,
+          "B": -12.962286949157715
+        },
+        "margin": 10.031667469440436
+      }
+    },
+    {
+      "id": "ge_07",
+      "category": "geografia",
+      "answer_idx": 3,
+      "question": "Które z państw sąsiaduje z Polską od południa?",
+      "options": [
+        "Litwa",
+        "Niemcy",
+        "Ukraina",
+        "Czechy"
+      ],
+      "answer_text": "Czechy",
+      "generative": {
+        "pred_idx": 0,
+        "correct": false,
+        "pred_text": "Litwa",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": false,
+        "pred_text": "Litwa",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.308",
+        "dist": {
+          "A": -0.3075847625732422,
+          "B": -2.0684070587158203,
+          "C": -2.4050655364990234,
+          "D": -3.035429000854492
+        },
+        "margin": 1.7608222961425781
+      }
+    },
+    {
+      "id": "ge_08",
+      "category": "geografia",
+      "answer_idx": 0,
+      "question": "W którym regionie Polski leży jezioro Śniardwy?",
+      "options": [
+        "Mazury",
+        "Bieszczady",
+        "Podhale",
+        "Kaszuby"
+      ],
+      "answer_text": "Mazury",
+      "generative": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "Mazury",
+        "parsed": true,
+        "raw": "A"
+      },
+      "likelihood": {
+        "pred_idx": 0,
+        "correct": true,
+        "pred_text": "Mazury",
+        "parsed": true,
+        "raw": "argmax=A lp=-0.007",
+        "dist": {
+          "A": -0.007089592982083559,
+          "C": -5.491344451904297,
+          "B": -6.057834625244141,
+          "D": -7.416772842407227
+        },
+        "margin": 5.484254858922213
+      }
+    }
+  ]
+}

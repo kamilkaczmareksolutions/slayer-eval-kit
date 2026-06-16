@@ -1,0 +1,14 @@
+# Core: decon działa na samym stdlib (zero zależności).
+# Poniższe są OPCJONALNE i włączają dodatkowe tryby.
+
+# mcq + morph-ext: zapytania HTTP do Ollama / API OpenAI-compatible
+requests>=2.31.0
+
+# decon: tryb near-dup MinHash (flaga --minhash)
+datasketch>=1.6.0
+
+# decon: tryb near-dup embeddingowy na CPU (flaga --embed)
+# sentence-transformers>=2.2.0   # odkomentuj, jeśli chcesz tryb --embed (ciężka instalacja)
+
+# c1-data-verify: pobieranie publicznych zbiorów testowych Open PL LLM Leaderboard
+# datasets>=2.14.0               # odkomentuj do scripts/fetch_pl_testsets.py

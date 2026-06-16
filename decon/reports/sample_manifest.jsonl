@@ -1,0 +1,4 @@
+{"corpus_id": "contam_verbatim_001", "action": "remove", "best_score": 1.0, "n_reasons": 1, "reasons": [{"test_set": "tests_sample", "test_item": "polemo2_001", "method": "ngram", "score": 1.0, "shared_ngrams": 12}]}
+{"corpus_id": "contam_verbatim_002", "action": "remove", "best_score": 1.0, "n_reasons": 1, "reasons": [{"test_set": "tests_sample", "test_item": "dyk_001", "method": "ngram", "score": 1.0, "shared_ngrams": 9}]}
+{"corpus_id": "contam_verbatim_003", "action": "remove", "best_score": 1.0, "n_reasons": 1, "reasons": [{"test_set": "tests_sample", "test_item": "belebele_001", "method": "ngram", "score": 1.0, "shared_ngrams": 11}]}
+{"corpus_id": "contam_verbatim_004", "action": "remove", "best_score": 1.0, "n_reasons": 1, "reasons": [{"test_set": "tests_sample", "test_item": "poquad_001", "method": "ngram", "score": 1.0, "shared_ngrams": 9}]}

@@ -1,0 +1,9 @@
+# Calkowita slepota AI (sekrety, paczki, modele, duze zrzuty)
+.env
+*.key
+.venv/
+venv/
+__pycache__/
+*.gguf
+*.safetensors
+data/downloaded/

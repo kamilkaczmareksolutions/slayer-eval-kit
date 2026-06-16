@@ -1,0 +1,32 @@
+{"id": "wo_01", "category": "wiedza_ogolna", "question": "Który pierwiastek chemiczny ma symbol 'O'?", "options": ["Złoto", "Tlen", "Wodór", "Węgiel"], "answer": 1}
+{"id": "wo_02", "category": "wiedza_ogolna", "question": "Ile wynosi suma kątów wewnętrznych trójkąta?", "options": ["90 stopni", "180 stopni", "270 stopni", "360 stopni"], "answer": 1}
+{"id": "wo_03", "category": "wiedza_ogolna", "question": "Które zwierzę jest największym ssakiem na Ziemi?", "options": ["Słoń afrykański", "Płetwal błękitny", "Żyrafa", "Rekin wielorybi"], "answer": 1}
+{"id": "wo_04", "category": "wiedza_ogolna", "question": "Który organ pompuje krew w ludzkim ciele?", "options": ["Wątroba", "Serce", "Płuca", "Nerki"], "answer": 1}
+{"id": "wo_05", "category": "wiedza_ogolna", "question": "Jaka jest jednostka natężenia prądu elektrycznego?", "options": ["Wolt", "Amper", "Om", "Wat"], "answer": 1}
+{"id": "wo_06", "category": "wiedza_ogolna", "question": "Który gaz jest najobficiej występującym składnikiem powietrza?", "options": ["Tlen", "Azot", "Dwutlenek węgla", "Argon"], "answer": 1}
+{"id": "wo_07", "category": "wiedza_ogolna", "question": "Ile planet liczy Układ Słoneczny według definicji z 2006 roku?", "options": ["Siedem", "Osiem", "Dziewięć", "Dziesięć"], "answer": 1}
+{"id": "wo_08", "category": "wiedza_ogolna", "question": "Z czego rośliny wytwarzają glukozę i tlen w fotosyntezie?", "options": ["Z dwutlenku węgla i wody", "Z azotu i gleby", "Z białek", "Z tłuszczów"], "answer": 0}
+{"id": "jp_01", "category": "jezyk_polski", "question": "Która forma bezokolicznika jest poprawna?", "options": ["wziąść", "wziąć", "wziłść", "wziónć"], "answer": 1}
+{"id": "jp_02", "category": "jezyk_polski", "question": "Jak brzmi dopełniacz liczby mnogiej słowa 'dziecko'?", "options": ["dziecek", "dzieci", "dziatków", "dziecków"], "answer": 1}
+{"id": "jp_03", "category": "jezyk_polski", "question": "Który zapis jest poprawny ortograficznie?", "options": ["napewno", "na pewno", "na-pewno", "napewn"], "answer": 1}
+{"id": "jp_04", "category": "jezyk_polski", "question": "Co oznacza frazeologizm 'rzucać grochem o ścianę'?", "options": ["mówić bezskutecznie, na próżno", "gotować obiad", "ciężko pracować fizycznie", "kłócić się głośno"], "answer": 0}
+{"id": "jp_05", "category": "jezyk_polski", "question": "Która część mowy odmienia się przez przypadki, liczby i rodzaje?", "options": ["czasownik", "przymiotnik", "przysłówek", "spójnik"], "answer": 1}
+{"id": "jp_06", "category": "jezyk_polski", "question": "Na jakie pytania odpowiada dopełniacz?", "options": ["kto? co?", "kogo? czego?", "komu? czemu?", "kogo? co?"], "answer": 1}
+{"id": "jp_07", "category": "jezyk_polski", "question": "Który wyraz jest synonimem słowa 'radość'?", "options": ["smutek", "wesołość", "złość", "strach"], "answer": 1}
+{"id": "jp_08", "category": "jezyk_polski", "question": "Poprawna forma trybu rozkazującego od 'wziąć' (2 os. l.poj.) to:", "options": ["weźmij", "weź", "wziąć", "wezm"], "answer": 1}
+{"id": "ma_01", "category": "matematyka", "question": "Ile wynosi 7 × 8?", "options": ["54", "56", "48", "64"], "answer": 1}
+{"id": "ma_02", "category": "matematyka", "question": "Jaka jest wartość liczby pi w przybliżeniu do dwóch miejsc po przecinku?", "options": ["3,12", "3,14", "3,16", "3,41"], "answer": 1}
+{"id": "ma_03", "category": "matematyka", "question": "Ile wynosi 15% liczby 200?", "options": ["20", "30", "25", "35"], "answer": 1}
+{"id": "ma_04", "category": "matematyka", "question": "Ile wynosi pierwiastek kwadratowy z 144?", "options": ["11", "12", "13", "14"], "answer": 1}
+{"id": "ma_05", "category": "matematyka", "question": "Jaki jest wynik działania 144 ÷ 12?", "options": ["10", "12", "14", "16"], "answer": 1}
+{"id": "ma_06", "category": "matematyka", "question": "Ile wynosi 2 do potęgi 5?", "options": ["16", "32", "64", "25"], "answer": 1}
+{"id": "ma_07", "category": "matematyka", "question": "Ile wynosi suma 125 + 375?", "options": ["400", "500", "450", "550"], "answer": 1}
+{"id": "ma_08", "category": "matematyka", "question": "Ile minut ma 2,5 godziny?", "options": ["120", "150", "160", "145"], "answer": 1}
+{"id": "ge_01", "category": "geografia", "question": "Która rzeka jest najdłuższa w Polsce?", "options": ["Odra", "Wisła", "Warta", "Bug"], "answer": 1}
+{"id": "ge_02", "category": "geografia", "question": "Jak nazywa się stolica Australii?", "options": ["Sydney", "Canberra", "Melbourne", "Perth"], "answer": 1}
+{"id": "ge_03", "category": "geografia", "question": "Które morze oblewa Polskę od północy?", "options": ["Morze Czarne", "Morze Bałtyckie", "Morze Północne", "Morze Śródziemne"], "answer": 1}
+{"id": "ge_04", "category": "geografia", "question": "Najwyższy szczyt Polski to:", "options": ["Śnieżka", "Rysy", "Babia Góra", "Kasprowy Wierch"], "answer": 1}
+{"id": "ge_05", "category": "geografia", "question": "Który kontynent jest najmniejszy pod względem powierzchni?", "options": ["Europa", "Australia", "Antarktyda", "Ameryka Południowa"], "answer": 1}
+{"id": "ge_06", "category": "geografia", "question": "Stolicą Japonii jest:", "options": ["Pekin", "Tokio", "Seul", "Bangkok"], "answer": 1}
+{"id": "ge_07", "category": "geografia", "question": "Które z państw sąsiaduje z Polską od południa?", "options": ["Litwa", "Czechy", "Ukraina", "Niemcy"], "answer": 1}
+{"id": "ge_08", "category": "geografia", "question": "W którym regionie Polski leży jezioro Śniardwy?", "options": ["Mazury", "Podhale", "Kaszuby", "Bieszczady"], "answer": 0}

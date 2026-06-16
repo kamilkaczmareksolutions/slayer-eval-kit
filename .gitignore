@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Large / downloaded data (not committed; fetched on demand)
+data/downloaded/
+**/data/downloaded/
+*.gguf
+*.safetensors
+
+# Discord posts (drafts roznicy, trzymane lokalnie, nie publikowane w repo)
+**/DISCORD_POST.md
+
+# Local secrets
+.env
+*.key
+
+# OS
+Thumbs.db
+.DS_Store
