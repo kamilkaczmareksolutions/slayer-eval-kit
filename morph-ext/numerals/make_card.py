@@ -48,8 +48,8 @@ def pct(p: int, t: int) -> str:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tests", default="polish_numerals_tests.json")
-    ap.add_argument("--results", default="results")
-    ap.add_argument("--out", default="results/CARD.md")
+    ap.add_argument("--results", default="runs")
+    ap.add_argument("--out", default="runs/CARD.md")
     args = ap.parse_args()
 
     tests = load_tests(args.tests)
