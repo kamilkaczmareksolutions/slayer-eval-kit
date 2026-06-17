@@ -18,7 +18,9 @@ Drop-in rozszerzenie seeda **lizzy-606** (`polish_morph_tests.json` v0.1, opubli
 
 Schemat każdego przypadku jest identyczny z v0.1: `id, category, prompt, expected, acceptable, distractor, note` (+ `is_generative` gdzie trzeba). Dzięki temu **lizzy może wkleić te przypadki wprost** do `polish_morph_tests.json` albo trzymać jako osobny plik.
 
-Dystraktory przeszły walidację: żaden nie zawiera formy akceptowanej jako podłańcuch (inaczej matcher `check_answer` dawałby false-pass). Walidacja jest częścią `c3` (skrypt w opisie poniżej).
+Dystraktory w partii bazowej przeszły walidację kolizji podłańcuchowych: żaden nie zawierał formy akceptowanej jako podłańcuch (inaczej matcher `check_answer` dawałby false-pass).
+
+**Rewizja r1** (poprawki lizzy-606 z `#benchmarki` 2026-06-16, naniesione w `NUM_COLL_008` i `IMPERATIVE_009`): w `IMPERATIVE_009` krótka forma akceptowana `nie pisz` jest podłańcuchem form błędnych (`nie piszesz`, `nie pisząc`), więc dla tego jednego itemu matcher substring potrafi dać false-pass. Jeden taki przypadek (qwen2.5:3b: `nie pisząc`) jest opisany w `results/CARD.md`. To naturalny kandydat na dopasowanie z granicą słowa po stronie evaluatora, ale to decyzja autorki, więc kod evaluatora zostaje bez zmian.
 
 ## Jak odpalić
 
