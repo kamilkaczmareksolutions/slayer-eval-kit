@@ -13,7 +13,7 @@ data/downloaded/
 *.safetensors
 
 # Discord posts (drafts roznicy, trzymane lokalnie, nie publikowane w repo)
-**/DISCORD_POST.md
+**/DISCORD_*.md
 
 # Local secrets
 .env
