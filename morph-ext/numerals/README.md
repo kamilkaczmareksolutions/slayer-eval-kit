@@ -42,5 +42,9 @@ kanoniczne liczby najlepiej policzyć evaluatorem v2 na pełnym zestawie modeli.
 
 ## Kredyty
 
-Schemat i evaluator: lizzy-606. Pomysł na liczebniki jako osobny temat: lizzy-606.
-Zgłoszenie failure modu: sygrydstorrada. Zestaw zadań: Kamil Kaczmarek.
+- **@lizzy-606**: schemat PL-MT, pomysl na liczebniki jako osobny temat, trzy warianty zapisu
+  (slownie / cyfra / cyfra z kropka), analizy morfologii vs instrukcji.
+- **@kwiscion**: evaluator v2 (set-equality, tryby `match`: cases/forms), merge PL-MT v0.2
+  (slayer PR #34, datasets PR #3).
+- **sygrydstorrada**: zgloszenie failure modu liczebnikow zbiorowych.
+- **Kamil Kaczmarek**: pod-track liczebnikow, 26 probek, PR datasets #4.

@@ -1,4 +1,4 @@
-# morph-ext: rozszerzenie Polish Morphology Benchmark
+# morph-ext: rozszerzenie Polish Morphology Benchmark (metoda)
 
 Drop-in rozszerzenie seeda **lizzy-606** (`polish_morph_tests.json` v0.1, opublikowanego na `#benchmarki` 2026-06-13) o cztery kategorie pod **udokumentowane failure mody**.
 
@@ -7,42 +7,30 @@ Drop-in rozszerzenie seeda **lizzy-606** (`polish_morph_tests.json` v0.1, opubli
 - **NUM_COLL, liczebniki zbiorowe.** sygrydstorrada w ewaluacji (#general, 2026-06-12) zaraportowała: *"Liczebniki zbiorowe (systematyczny fail): model konsekwentnie wykłada się... generuje formy 'pięć dzieci' (zamiast pięcioro) oraz 'trzech kociąt' (zamiast troje)."* To zmierzony, powtarzalny błąd, czyli to, co lab chce mierzyć ("naprawiamy konkretny, zmierzony failure mode").
 - **REFLEXIVE, IMPERATIVE, CONS_ALT**: luki wymienione wprost przez autorkę w sekcji "Ograniczenia obecnej wersji" v0.1 (czasowniki zwrotne / pozycja `się`, tryb rozkazujący, alternacje spółgłoskowe).
 
-## Co tu jest
+## Co tu jest (metoda, bez danych)
 
 | Plik | Rola |
 |------|------|
-| `polish_morph_tests_ext.json` | 44 nowe przypadki (NUM_COLL 13, REFLEXIVE 10, IMPERATIVE 11, CONS_ALT 10) w schemacie v0.1 |
 | `evaluator_lizzy.py` | vendorowana kopia evaluatora lizzy-606 (logika bez zmian, dodany nagłówek atrybucji) |
 | `make_result_card.py` | generator markdownowego result card (dorzut, nie zmienia evaluatora) |
-| `results/` | wygenerowane wyniki + result card |
+| `numerals/make_card.py` | karta wyników per zapis liczby (słownie / cyfra / cyfra z kropką) |
 
-Schemat każdego przypadku jest identyczny z v0.1: `id, category, prompt, expected, acceptable, distractor, note` (+ `is_generative` gdzie trzeba). Dzięki temu **lizzy może wkleić te przypadki wprost** do `polish_morph_tests.json` albo trzymać jako osobny plik.
+Schemat każdego przypadku w zestawie held-out jest identyczny z v0.1: `id, category, prompt, expected, acceptable, distractor, note` (+ `is_generative` gdzie trzeba).
 
-Dystraktory w partii bazowej przeszły walidację kolizji podłańcuchowych: żaden nie zawierał formy akceptowanej jako podłańcuch (inaczej matcher `check_answer` dawałby false-pass).
+## Dane (held-out)
 
-**Rewizja r1** (poprawki lizzy-606 z `#benchmarki` 2026-06-16, naniesione w `NUM_COLL_008` i `IMPERATIVE_009`): w `IMPERATIVE_009` krótka forma akceptowana `nie pisz` jest podłańcuchem form błędnych (`nie piszesz`, `nie pisząc`), więc dla tego jednego itemu matcher substring potrafi dać false-pass. Jeden taki przypadek (qwen2.5:3b: `nie pisząc`) jest opisany w `results/CARD.md`. To naturalny kandydat na dopasowanie z granicą słowa po stronie evaluatora, ale to decyzja autorki, więc kod evaluatora zostaje bez zmian.
+Zestaw zadań (`polish_morph_tests_ext.json`, 44 przypadki) i wyniki próbne są held-out, więc nie trzymam ich publicznie. Żyją w prywatnym repo `slayerlabs/datasets` pod `data/eval/plmt/morph_ext/` (branch `plmt-morph-ext`). To zgodne z zasadą projektu: zbiory ewaluacyjne nie idą do publicznego repo, żeby nie wpłynęły do treningu.
 
-## Jak odpalić
+## Jak odpalić (z dostępem do datasets)
 
 ```bash
-# 1. Podglad bez modelu
+# zestaw zadań pobierz z prywatnego datasets (data/eval/plmt/morph_ext/)
 python evaluator_lizzy.py --file polish_morph_tests_ext.json --dry-run
-
-# 2. Lokalnie na llama3.2:3b (Ollama)
 python evaluator_lizzy.py --file polish_morph_tests_ext.json \
     --model ollama/llama3.2:3b --skip-generative \
-    --save results/results_llama32_3b.json
-
-# 3. Model przez API zgodne z OpenAI (np. OpenRouter)
-#    set OPENAI_BASE_URL=https://openrouter.ai/api/v1  &&  set OPENAI_API_KEY=...
-python evaluator_lizzy.py --file polish_morph_tests_ext.json \
-    --model meta-llama/llama-3.2-3b-instruct \
-    --save results/results_or_llama32.json
-
-# 4. Result card (porownanie modeli)
+    --save runs/results_llama32_3b.json
 python make_result_card.py --tests polish_morph_tests_ext.json \
-    --results results/results_llama32_3b.json \
-    --out results/CARD.md
+    --results runs/results_llama32_3b.json --out runs/CARD.md
 ```
 
 `--skip-generative` pomija 5 przypadków wymagających pełnego zdania (ocena automatyczna jest tam przybliżona), zgodnie z konwencją evaluatora lizzy.
