@@ -2,10 +2,10 @@
 # Poniższe są OPCJONALNE i włączają dodatkowe tryby.
 
 # mcq + morph-ext: zapytania HTTP do Ollama / API OpenAI-compatible
-requests>=2.31.0
+requests==2.33.0
 
 # decon: tryb near-dup MinHash (flaga --minhash)
-datasketch>=1.6.0
+datasketch==1.10.0
 
 # decon: tryb near-dup embeddingowy na CPU (flaga --embed)
 # sentence-transformers>=2.2.0   # odkomentuj, jeśli chcesz tryb --embed (ciężka instalacja)
