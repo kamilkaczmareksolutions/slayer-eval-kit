@@ -5,7 +5,7 @@
 requests>=2.31.0
 
 # decon: tryb near-dup MinHash (flaga --minhash)
-datasketch>=1.6.0
+datasketch>=2.0.0
 
 # decon: tryb near-dup embeddingowy na CPU (flaga --embed)
 # sentence-transformers>=2.2.0   # odkomentuj, jeśli chcesz tryb --embed (ciężka instalacja)
